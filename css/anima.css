@@ -1,0 +1,64 @@
+/* ===== BASE SECTION STATE ===== */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  will-change: opacity, transform;
+}
+
+/* ===== VISIBLE STATE ===== */
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== CHILD ELEMENT STAGGER ===== */
+.scroll-animate > * {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.in-view > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== STAGGER TIMING ===== */
+.scroll-animate.in-view > *:nth-child(1) { transition-delay: 0.1s; }
+.scroll-animate.in-view > *:nth-child(2) { transition-delay: 0.25s; }
+.scroll-animate.in-view > *:nth-child(3) { transition-delay: 0.4s; }
+.scroll-animate.in-view > *:nth-child(4) { transition-delay: 0.55s; }
+.scroll-animate.in-view > *:nth-child(5) { transition-delay: 0.7s; }
+
+/* ===== IMAGES ===== */
+.scroll-animate img {
+  transform: scale(0.95);
+}
+
+.scroll-animate.in-view img {
+  transform: scale(1);
+}
+
+/* ===== LINKS & BUTTONS ===== */
+.scroll-animate a {
+  transform: translateY(20px);
+}
+
+.scroll-animate.in-view a {
+  transform: translateY(0);
+}
+
+/* ===== OPTIONAL DIRECTION VARIANTS ===== */
+.scroll-animate-left {
+  transform: translateX(-70px);
+}
+
+.scroll-animate-right {
+  transform: translateX(70px);
+}
+
+.scroll-animate-left.in-view,
+.scroll-animate-right.in-view {
+  transform: translateX(0);
+}
