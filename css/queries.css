@@ -17,11 +17,6 @@
         height: 280px;
     }
 
-    .vision-overlay h2 { 
-        font-size: 1.3rem;
-     }
-
-
     .hamburger {
         display: flex;
     }
@@ -72,8 +67,8 @@
     }
 
      .to-projects-link { 
-        left: 12%; 
-        top: 45%;
+        left: 10%; 
+        top: 40%;
     }
 
      .to-projects-link a {
@@ -82,8 +77,8 @@
     }
 
       .phone-link { 
-        left: 68%; 
-        top: 45%; 
+        left: 60%; 
+        top: 40%; 
     }
 
     .phone-link a {
@@ -333,3 +328,4 @@ html { font-size: 16px; }
 @media (min-width: 1600px) {
     html { font-size: 18px; }
 }
+
