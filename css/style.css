@@ -81,7 +81,7 @@ body.nav-open main {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Navigation Menu */
+.nav-menu {
     display: none;
 }
 
@@ -171,7 +171,7 @@ section h1 {
     font-size: 2rem;
 }
 
-/* highlight used for important phrases */
+section h2 {
     color: #007bff;
     font-weight: 700;
 }
@@ -354,7 +354,7 @@ section li {
 
 
 
-/* Welcome content below carousel */
+.content-section {
     background: #f9f9f9;
     padding: 2rem;
     border-radius: 0 0 8px 8px;
@@ -489,4 +489,5 @@ section li {
   color: #94a3b8;
   font-size: 0.9rem;
   padding: 1.25rem 0;
+
 }
